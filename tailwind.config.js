@@ -1,8 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./**/*.{html,js}"],
   theme: {
-    extend: {},
+    container: {
+      center: true,
+      padding: "16px",
+    },
+    extend: {
+      screens: {
+        "2xl": "1320px",
+      },
+    },
   },
   plugins: [],
 };
